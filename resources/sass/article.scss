@@ -1,0 +1,252 @@
+.article {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  
+  @media (min-width: 1365px) {
+    .article {
+      display: grid;
+      grid-template-columns: 1fr minmax(30%, 300px);
+      padding-bottom: 180px;
+      grid-column-gap: 70px;
+      -webkit-column-gap: 70px;
+      -moz-column-gap: 70px;
+      column-gap: 70px;
+    }
+  
+    .article--review {
+      padding-bottom: 40px;
+    }
+  }
+  
+  .article-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  
+    h1 {
+      margin-bottom: 30px;
+    }
+  
+    > p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+  
+      + p {
+        margin-top: 30px;
+      }
+    }
+  
+    .article__date {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 500;
+  
+      time {
+        font-weight: 400;
+      }
+    }
+  }
+  
+  @media (min-width: 1365px) {
+    .article-content > p {
+      font-size: 18px;
+    }
+  }
+  
+  .article__product-info {
+    font-weight: 400;
+  }
+  
+  .article__date {
+    margin-bottom: 10px;
+  
+    time {
+      font-weight: 400;
+    }
+  }
+  
+  .article__media {
+    margin: 30px 0;
+  
+    p {
+      font-size: 10px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+  
+  @media (min-width: 1365px) {
+    .article__media {
+      margin: 40px 0;
+    }
+  }
+  
+  @media (min-width: 1365px) {
+    .article__media p {
+      font-size: 14px;
+    }
+  }
+  
+  .article__iframe {
+    position: relative;
+    padding-top: Min(Max(56.25%, 1px), 600px);
+    margin-bottom: 10px;
+  
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #b4b4b4;
+      border: none;
+    }
+  }
+  
+  .article__shear-title {
+    margin: 50px 0 15px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  @media (min-width: 1365px) {
+    .article__shear-title {
+      margin: 80px 0 20px;
+      font-size: 24px;
+    }
+  }
+  
+  .article__shear-title--review {
+    margin-top: 35px;
+  }
+  
+  .article-aside {
+    display: none;
+  }
+  
+  @media (min-width: 1365px) {
+    .article-aside {
+      display: block;
+      padding-top: 55px;
+    }
+  }
+  
+  .article-aside__inner {
+    position: sticky;
+    top: calc(var(--header-height) + 15px);
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+  
+    h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+  }
+  
+  .article-aside__list {
+    border: 1px solid #ebebeb;
+  
+    > a {
+      padding: 30px;
+  
+      + a {
+        border-top: 1px solid #ebebeb;
+      }
+    }
+  }
+  
+  .article__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  @media (min-width: 1365px) {
+    .article__navigation {
+      margin-top: 100px;
+    }
+  }
+  
+  .article__btn-nav {
+    &:before {
+      width: 8px;
+      height: 8px;
+    }
+  
+    &.arrow--left {
+      padding-left: 15px;
+    }
+  
+    &.arrow--right {
+      padding-right: 15px;
+    }
+  }
+  
+  @media (min-width: 1365px) {
+    .article__btn-nav {
+      font-size: 30px;
+      -webkit-transition: color .3s;
+      transition: color .3s;
+  
+      &:focus, &:hover {
+        color: #5f3ec0;
+      }
+  
+      &:before {
+        width: 14px;
+        height: 14px;
+        border-width: 2px;
+      }
+  
+      &.arrow--left:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 85px;
+        height: 2px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-color: currentColor;
+      }
+  
+      &.arrow--right {
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          width: 85px;
+          height: 2px;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background-color: currentColor;
+          right: 0;
+        }
+  
+        padding-right: 115px;
+      }
+  
+      &.arrow--left {
+        padding-left: 115px;
+  
+        &:after {
+          left: 0;
+        }
+      }
+    }
+  }

@@ -1,0 +1,112 @@
+.catalog-main {
+  color: #121212;
+}
+.catalog-main h1 {
+  margin: 25px 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.catalog-main__category-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.catalog-main__category-title svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+}
+.catalog-main__category-title sup {
+  display: none;
+}
+
+.catalog-main__category-list {
+  margin-bottom: 50px;
+}
+
+.catalog-main__subcategory-item > a {
+  display: flex;
+}
+.catalog-main__subcategory-item > a svg {
+  display: none;
+}
+
+@media (min-width: 1365px) {
+  .catalog-main h1 {
+    margin: 60px 0;
+    font-size: 40px;
+  }
+  .catalog-main .submenu-block {
+    all: inherit;
+    display: flex;
+  }
+  .catalog-main .aside__link span {
+    all: inherit;
+    padding: 0;
+  }
+  .catalog-main .aside__link span:after {
+    content: none;
+  }
+
+  .catalog-main__subcategory-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    grid-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    grid-row-gap: 55px;
+    row-gap: 55px;
+    margin-bottom: 100px;
+  }
+
+  .catalog-main__category-list {
+    padding: 0 var(--main-padding);
+  }
+
+  .catalog-main__subcategory-item a {
+    padding: 0 0 0 68px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  .catalog-main__subcategory-item a:focus, .catalog-main__subcategory-item a:hover {
+    color: #5f3ec0;
+  }
+  .catalog-main__subcategory-item > a:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: max(min(24px, 1.4vw), 18px);
+    font-weight: 500;
+    line-height: 1.17;
+    padding: 0;
+  }
+  .catalog-main__subcategory-item > a:first-child svg {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+  }
+
+  .catalog-main__all-category {
+    order: -1;
+  }
+
+  .catalog-main__category-title {
+    font-size: 36px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  .catalog-main__category-title svg {
+    display: none;
+  }
+  .catalog-main__category-title sup {
+    display: inline;
+  }
+}
+.child-active {
+  overflow: hidden;
+}

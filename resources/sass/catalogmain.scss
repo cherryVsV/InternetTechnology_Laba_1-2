@@ -1,0 +1,142 @@
+.catalog-main {
+    color: #121212;
+  
+    h1 {
+      margin: 25px 0;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+  
+  .catalog-main__category-title {
+    font-size: 16px;
+    font-weight: 500;
+  
+    svg {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      margin-right: 25px;
+    }
+  
+    sup {
+      display: none;
+    }
+  }
+  
+  .catalog-main__category-list {
+    margin-bottom: 50px;
+  }
+  
+  .catalog-main__subcategory-item > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    svg {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1365px) {
+    .catalog-main {
+      h1 {
+        margin: 60px 0;
+        font-size: 40px;
+      }
+  
+      .submenu-block {
+        all: inherit;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+  
+      .aside__link span {
+        all: inherit;
+        padding: 0;
+  
+        &:after {
+          content: none;
+        }
+      }
+    }
+  
+    .catalog-main__subcategory-list {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+      grid-column-gap: 30px;
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+      grid-row-gap: 55px;
+      row-gap: 55px;
+      margin-bottom: 100px;
+    }
+  
+    .catalog-main__category-list {
+      padding: 0 var(--main-padding);
+    }
+  
+    .catalog-main__subcategory-item {
+      a {
+        padding: 0 0 0 68px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+  
+        &:focus, &:hover {
+          color: #5f3ec0;
+        }
+      }
+  
+      > a:first-child {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 5px;
+        font-size: Max(Min(24px, 1.4vw), 18px);
+        font-weight: 500;
+        line-height: 1.17;
+        padding: 0;
+  
+        svg {
+          display: block;
+          width: 48px;
+          height: 48px;
+          margin-right: 20px;
+        }
+      }
+    }
+  
+    .catalog-main__all-category {
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1;
+    }
+  
+    .catalog-main__category-title {
+      font-size: 36px;
+      margin-bottom: 35px;
+      padding: 0;
+  
+      svg {
+        display: none;
+      }
+  
+      sup {
+        display: inline;
+      }
+    }
+  }
+  
+  .child-active {
+    overflow: hidden;
+  }

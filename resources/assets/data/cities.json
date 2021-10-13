@@ -1,0 +1,98 @@
+[
+  {
+    "id": "city-spb",
+    "name": "Санкт-Петербург"
+  },
+  {
+    "id": "city-msk",
+    "name": "Москва"
+  },
+  {
+    "id": "city-arh",
+    "name": "Архангельск"
+  },
+  {
+    "id": "city-vgd",
+    "name": "Волгоград"
+  },
+  {
+    "id": "city-vnj",
+    "name": "Воронеж"
+  },
+  {
+    "id": "city-ekb",
+    "name": "Екатернибург"
+  },
+  {
+    "id": "city-ijv",
+    "name": "Ижевск"
+  },
+  {
+    "id": "city-irz",
+    "name": "Иркутск"
+  },
+  {
+    "id": "city-kzn",
+    "name": "Казань"
+  },
+  {
+    "id": "city-kmv",
+    "name": "Кемерово"
+  },
+  {
+    "id": "city-krd",
+    "name": "Краснодар"
+  },
+  {
+    "id": "city-ksj",
+    "name": "Красноярск"
+  },
+  {
+    "id": "city-nnv",
+    "name": "Нижний Новгород"
+  },
+  {
+    "id": "city-nsb",
+    "name": "Новосибирск"
+  },
+  {
+    "id": "city-vvs",
+    "name": "Владивосток"
+  },
+  {
+    "id": "city-mrk",
+    "name": "Мурманск"
+  },
+  {
+    "id": "city-nch",
+    "name": "Набережные Челны"
+  },
+  {
+    "id": "city-oms",
+    "name": "Омск"
+  },
+  {
+    "id": "city-prm",
+    "name": "Пермь"
+  },
+  {
+    "id": "city-rnd",
+    "name": "Ростов-на-Дону"
+  },
+  {
+    "id": "city-srt",
+    "name": "Саратов"
+  },
+  {
+    "id": "city-smr",
+    "name": "Самара"
+  },
+  {
+    "id": "city-sch",
+    "name": "Сочи"
+  },
+  {
+    "id": "city-svt",
+    "name": "Сургут"
+  }
+]
